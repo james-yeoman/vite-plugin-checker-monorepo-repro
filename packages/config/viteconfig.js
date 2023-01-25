@@ -5,7 +5,7 @@ const { default: tsconfigPaths } = require("vite-tsconfig-paths");
 
 const cfg = (root) => {
   const checkerOpts = {
-    typescript: true,
+    typescript: { buildMode: true },
     eslint: { lintCommand: `eslint ${root}/src/**/*.{js,jsx,ts,tsx}` },
   };
 
